@@ -29,44 +29,29 @@
 ## Installation
 
 ```bash
-$ npm install
+$ npm i -g @nestjs/cli
+$ nest new project-name
+
 ```
 
-## Running the app
-
-```bash
-# development
+$ cd project-name
 $ npm run start
+```
+Instalação Swagger
 
-# watch mode
-$ npm run start:dev
+@nestjs/swagger
+swagger-ui-express
 
-# production mode
-$ npm run start:prod
+npm install --save @nestjs/swagger swagger-ui-express
 ```
 
-## Test
+NestJS - Swagger - Documentação de Endpoint
 
-```bash
-# unit tests
-$ npm run test
+O Swagger (aka OpenApi) é uma biblioteca muito conhecida no universo backend, estando disponível para diversas linguagens e frameworks. Ela gera um site interno no seu backend que descreve, com muitos detalhes, cada endpoint e estrutura de entidades presentes na sua aplicação.
 
-# e2e tests
-$ npm run test:e2e
+Além disso, também oferece uma interface para que a API seja testada, sem precisar de um cliente HTTP externo (aka Postman, Insomnia, Thunder Client, etc) e, principalmente, com configuração ZERO!
 
-# test coverage
-$ npm run test:cov
-```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+Como de costume, o Nest resolve toda a parte chata da configuração e a gente só precisa declarar algumas linhas de código para integrar essa poderosa API.
 
 ## License
 
