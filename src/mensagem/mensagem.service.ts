@@ -36,4 +36,12 @@ export class MensagemService {
           return await this.MensagemRepository.delete(idMensagem);
       }
 
+      async findOne(idMensagem:number){
+        return await this.MensagemRepository.find({
+            where:{
+                id: idMensagem
+            }
+        });
+      }
+
 }
